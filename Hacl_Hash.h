@@ -38,10 +38,10 @@ extern "C" {
 
 
 #include "Hacl_Kremlib.h"
-#include "Hacl_Blake2s_32.h"
+//#include "Hacl_Blake2s_32.h"
 #include "Lib_Memzero0.h"
-#include "Hacl_Blake2b_32.h"
-#include "Hacl_Impl_Blake2_Constants.h"
+//#include "Hacl_Blake2b_32.h"
+//#include "Hacl_Impl_Blake2_Constants.h"
 #include "Hacl_Spec.h"
 
 uint64_t Hacl_Hash_Core_Blake2_update_blake2s_32(uint32_t *s, uint64_t totlen, uint8_t *block);
