@@ -15,7 +15,9 @@ int main(void) {
     ARRAY(key , 64);
     ARRAY(in  , 64);
 
-    Hacl_HMAC_compute_sha2_512(hash, key, 64, in, 0);
+    // Hacl_HMAC_compute_sha2_512(hash, key, 64, in, 0);
+    Hacl_Hash_SHA2_hash_512(in, 1, hash);
+
 
     // OK
     // Hacl_HMAC_compute_sha2_512(hash, key, 64, in, 1);
