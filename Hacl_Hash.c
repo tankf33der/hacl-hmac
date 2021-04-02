@@ -2582,7 +2582,7 @@ void Hacl_Hash_Core_SHA2_update_256(uint32_t *hash, uint8_t *block)
       if (i < (uint32_t)16U)
       {
         uint8_t *b = block + i * (uint32_t)4U;
-        uint32_t u = load32_be(b);
+        uint32_t u = load32_be_p(b);
         computed_ws[i] = u;
       }
       else
